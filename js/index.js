@@ -363,7 +363,7 @@ function displayLaunches() {
   const launchesGrid = document.querySelector("#launches-grid");
   let cards = "";
   for (let i = 1; i < launchesList.length; i++) {
-    const d = new Date(launchesList[0].net),
+    const d = new Date(launchesList[i].net),
       launchDate = d.toLocaleDateString("en-US", {
         weekday: "long",
         month: "long",
