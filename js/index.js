@@ -26,7 +26,9 @@ function navLinksF() {
       });
       activeSection.classList.remove("hidden");
       sideBar.classList.remove("sidebar-open");
-      document.body.removeChild(overlay);
+      if (window.innerWidth <= 1024) {
+        document.body.removeChild(overlay);
+      }
     });
   });
 }
