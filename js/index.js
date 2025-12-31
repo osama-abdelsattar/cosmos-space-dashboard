@@ -100,7 +100,7 @@ function dateInputsF() {
 // APOD API
 let apodList = [];
 async function getApod(date = null) {
-  const base = `https://api.nasa.gov/planetary/apod/`;
+  const base = `https://api.nasa.gov/planetary/apod`;
   let endpoint = `?api_key=${apiKey}`;
   if (date !== null) {
     endpoint += `&date=${date}`;
